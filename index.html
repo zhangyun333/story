@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Story</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #0D5C87 0%, #80B3D1 100%);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            max-width: 80%;
+        }
+
+        .text-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 2.2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin: 0 0 20px 0;
+            line-height: 1.3;
+        }
+
+        .highlight {
+            color: #FEDD00; /* 希腊国旗黄色 */
+            font-weight: bold;
+        }
+
+        .deco-line {
+            width: 60px;
+            height: 4px;
+            background: #fff;
+            margin: 25px auto;
+            border-radius: 2px;
+        }
+
+        .parthenon-icon {
+            font-size: 3em;
+            margin: 15px 0;
+            color: rgba(255, 255, 255, 0.2);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container animate-float">
+        <div class="text-box">
+            <div class="parthenon-icon">✈️🚫</div>
+            <h1>
+                "Who can tell me why Greeks choose strikes to solve problems?<br>
+                <span class="highlight">It harms others' interests,</span><br>
+                <span class="highlight">undermines industries,</span><br>
+                <span class="highlight">compromises national welfare.</span><br>
+                What does it ultimately achieve?"
+            </h1>
+            <div class="deco-line"></div>
+        </div>
+    </div>
+</body>
+</html>
